@@ -1,16 +1,26 @@
 # Extended thinking & extended thinking with interleaved-thinking for tool calling: why & how?
 
-Many API providers including OpenAI, Anthropic, MiniMax have implemented interleaved thinking/reasoning. That has created some confusion. It is a powerful technique. The person of this repository is to provide a clear understanding on this topic: including how to deal with these APIs to take advantage of the feature, and what are the impacts on caching.
+Many API providers including OpenAI, Anthropic, MiniMax have implemented extended thinking and furthermore interleaved thinking for tool calls. 
 
-One of the reasons that was given by Open AI for creating Responses API to succeed the Chat Completion API was that the former used to discard reasoning that could have been useful later.
-This particularly matters for successive tool calls within the same assistant turn (until the assistant generates a response for user, the assistant turn is not considered over). 
-Successive tool calls are not shown in this diagram, but next one.
+That has created some confusion. It is a powerful technique. 
+The purpose of this repository is to provide a clear understanding on this topic: including how to deal with these APIs to take advantage of the features, and what are the impacts on caching.
+
+One of the reasons that was given by Open AI for creating Responses API to succeed the Chat Completion API was that the former used to discard reasoning that could have been useful later. 
+With Responses API, reasoning is retained and it can be referenced in successive calls.
+The performance difference between the two APIs, all things remaining same can be significant. 
+Quote: "On a more rigorous benchmark like SWE-bench, including reasoning items led to about a 3% improvement for the same prompt and setup."
+
+This particularly matters for successive tool calls within the same assistant turn (**Definition**: if assistant is generating tool calls, the assistant turn is not considered over until it generates final response for the user). 
+Successive tool calls are not shown in this diagram, but we will see them in the next section.
 
 ![Discarding Reasoning](Discarding_reasoning.png)
 
 # what is interleaved thinking, extended thinking anyways?
 
 Below diagram from MiniMax team explains the three scenarios succinctly.
+
+In the interleaved thinking scenario the model is evaluating tool responses, and thinking again before it generates the next tool call. This way it does tool calling in a strategic or intelligent manner.
+This improves the performance of your agentic application.
 
 ![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
@@ -25,7 +35,8 @@ I extracted them from langfuse for my DeepResearch Application that uses these A
 
 # How to deal with reasoning blocks?
 
-If you use official Responses API or Claude Messages API, they make it easy to send back all the reasoning block. The API intelligently retains only reasoning blocks for the ongoing turn. The moment the next turn begins, reasoning blocks for the previous turn are ignored (you should still send them, as it keeps implementation clean).
+If you use official OpenAI Responses API or Anthropic Messages API, they make it easy to send back all the reasoning block. The API intelligently retains only reasoning blocks for the ongoing turn (recall the definition of assistant turn). 
+The moment the next turn begins when user sends a new message, reasoning blocks for the previous turn are ignored (you should still send them, as it keeps implementation clean).
 
 # Impact of extended thinking with interleaved thinking for tool calls?
 
