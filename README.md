@@ -1,4 +1,4 @@
-# interleaved-thinking: why & how?
+# Extended thinking & extended thinking with interleaved-thinking for tool calling: why & how?
 
 Many API providers including OpenAI, Anthropic, MiniMax have implemented interleaved thinking/reasoning. That has created some confusion. It is a powerful technique. The person of this repository is to provide a clear understanding on this topic: including how to deal with these APIs to take advantage of the feature, and what are the impacts on caching.
 
@@ -14,10 +14,14 @@ Below diagram from MiniMax team explains the three scenarios succinctly.
 
 ![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
-# How to deal with reasoning blocks?
-If you want to see actual messages exchanged, please review files with the following names in the current directory:/m
-Extended-Thiking.json/n
-Extended-Thiking-with_interleaved.json/n
+# How the request-response messages will look like?
+If you want to see actual messages exchanged, please review files with the following names in the current directory:
+
+Extended-Thiking.json
+
+Extended-Thiking-with_interleaved.json
+
+I extracted them from langfuse for my DeepResearch Application that uses these APIs.
 
 # How to deal with reasoning blocks?
 
