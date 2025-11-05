@@ -15,10 +15,15 @@ Below diagram from MiniMax team explains the three scenarios succinctly.
 ![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
 # How to deal with reasoning blocks?
+If you want to see actual messages exchanged, please review files with the following names in the current directory:
+Extended-Thiking.json
+Extended-Thiking-with_interleaved.json
+
+# How to deal with reasoning blocks?
 
 If you use official Responses API or Claude Messages API, they make it easy to send back all the reasoning block. The API intelligently retains only reasoning blocks for the ongoing turn. The moment the next turn begins, reasoning blocks for the previous turn are ignored (you should still send them, as it keeps implementation clean).
 
-# Impact of Extended Thinking with Interleaved thinking for Tool calls?
+# Impact of extended thinking with interleaved thinking for tool calls?
 
 OpenAI and Anthropic support caching. But MiniMax is yet to support caching - it is coming soon.
 
