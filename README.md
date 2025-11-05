@@ -1,4 +1,4 @@
 # interleaved-reasoning
 
 
-![Discarding Reasoning](Discarding_Reasonin.png)
+![Discarding Reasoning](Discarding_reasoning.png)
