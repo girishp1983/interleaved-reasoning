@@ -15,9 +15,9 @@ Below diagram from MiniMax team explains the three scenarios succinctly.
 ![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
 # How to deal with reasoning blocks?
-If you want to see actual messages exchanged, please review files with the following names in the current directory:
-Extended-Thiking.json
-Extended-Thiking-with_interleaved.json
+If you want to see actual messages exchanged, please review files with the following names in the current directory:/m
+Extended-Thiking.json/n
+Extended-Thiking-with_interleaved.json/n
 
 # How to deal with reasoning blocks?
 
