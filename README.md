@@ -50,6 +50,9 @@ So, no-free lunch. There is a trade off.
 
 ![Impact on Caching](OpenAI.png)
 
+Impact of extended thinking with interleaved thinking for tool calls?
+
+
 
 
 
