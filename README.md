@@ -11,6 +11,6 @@ This particularly matters for successive tool calls within the same assistant tu
 
 Below diagram from MiniMax team explains it succinctly.
 
-![Alt text](Minimax-M2.png)
+![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
 
