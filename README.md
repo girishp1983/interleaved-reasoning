@@ -15,12 +15,12 @@ Successive tool calls are not shown in this diagram, but we will see them in the
 
 ![Discarding Reasoning](Discarding_reasoning.png)
 
-# what is interleaved thinking, extended thinking anyways?
+# Visualizing scenarios: no-thinking, extended thinking and extended thinking wiht interleaved thinking for tool calls?
 
 Below diagram from MiniMax team explains the three scenarios succinctly.
 
 In the interleaved thinking scenario the model is evaluating tool responses, and thinking again before it generates the next tool call. This way it does tool calling in a strategic or intelligent manner.
-This improves the performance of your agentic application.
+**This improves the performance of your agentic application vastly.**
 
 ![No Thinking, Extended Thinking and Extented Thinking with Interleaved Thinking for Tool calling](MiniMax-M2.png)
 
