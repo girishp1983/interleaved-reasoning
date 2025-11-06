@@ -50,9 +50,13 @@ So, no-free lunch. There is a trade off.
 
 ![Impact on Caching](OpenAI.png)
 
-Impact of extended thinking with interleaved thinking for tool calls?
+# Impact of extended thinking with interleaved thinking for tool calls?
 
+As OpenAI reports performance with returned reasoning blocks can be 5% higher on SWE-bench. That is free lunch if you ask me.
 
+# OpenRouter Support for Interleaved Thinking with OpenAI Chat Completions API
+
+You can read about it in [MiniMax-M2 Blog](https://platform.minimax.io/docs/guides/text-m2-function-call#interleaved-thinking-compatible-format)
 
 
 
