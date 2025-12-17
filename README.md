@@ -1,4 +1,4 @@
-# Extended thinking & extended thinking with interleaved-thinking for tool calling: why & how?
+<img width="2454" height="1696" alt="image" src="https://github.com/user-attachments/assets/de4b85eb-6e66-439f-aa36-75eaa754d7a7" /># Extended thinking & extended thinking with interleaved-thinking for tool calling: why & how?
 
 Many API providers including OpenAI, Anthropic, MiniMax have implemented extended thinking and furthermore interleaved thinking for tool calls. 
 
@@ -63,6 +63,8 @@ You can read about it in [MiniMax-M2 Blog](https://platform.minimax.io/docs/guid
 # DeepSeek Supports it from DeepSeek V3.2
 
 You can read about it in [DeepSeek page](https://api-docs.deepseek.com/guides/thinking_mode)
+
+![DeepSeek_Interleaved_Thinking_for_Tool_Use][DeepSeek_Thinking.png]
 
 
 
