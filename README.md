@@ -58,6 +58,8 @@ You can read about it in [MiniMax-M2 Blog](https://platform.minimax.io/docs/guid
 
 # Kimi-K2-Thinking now supports it
 
+You can read about it in [Kimi-K2 docs](https://platform.moonshot.ai/docs/guide/use-kimi-k2-thinking-model#basic-use-case)
+
 # DeepSeek Supports it from DeepSeek V3.2
 
 You can read about it in [DeepSeek page](https://api-docs.deepseek.com/guides/thinking_mode)
