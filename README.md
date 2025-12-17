@@ -58,5 +58,12 @@ As OpenAI reports performance with returned reasoning blocks can be 5% higher on
 
 You can read about it in [MiniMax-M2 Blog](https://platform.minimax.io/docs/guides/text-m2-function-call#interleaved-thinking-compatible-format)
 
+# Kimi-K2-Thinking now supports it
+
+# DeepSeek Supports it from DeepSeek V3.2
+
+You can read about it in [DeepSeek page](https://api-docs.deepseek.com/guides/thinking_mode)
+
+
 
 
